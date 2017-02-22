@@ -82,33 +82,70 @@
                         <a class="showSingle" target="1">
                             <img src="images/agile-functionality/a.png" alt="Letter A">
                         </a>
-                        <div id="div1" class="targetDiv">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</div>
+                        <div id="div1" class="targetDiv">
+                        We get close to your business, understanding your people, your culture and your goals before using our expertise to deliver solutions that are absolutely right for you.
+                        </div>
                     </div>
                     <div class="large-2 columns no-padding-left-right">
                         <a class="showSingle" target="2">
                             <img src="images/agile-functionality/g.png" alt="Letter G">
                         </a>
-                        <div id="div2" class="targetDiv" style="display: none; color: white;">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</div>
+                        <div id="div2" class="targetDiv" style="display: none; color: white;">Once we completely
+                            understand your business
+                            and where you want to go,
+                            we’ll work with you to set
+                            out your goals and create
+                            a detailed plan.
+                        </div>
                     </div>
                     <div class="large-2 columns no-padding-left-right">
                         <a class="showSingle" target="3">
                             <img src="images/agile-functionality/i.png" alt="Letter I">
                         </a>
-                        <div id="div3" class="targetDiv" style="display: none; color: white;">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</div>
+                        <div id="div3" class="targetDiv" style="display: none; color: white;">We’ll work closely with
+                            your team. We’ll make
+                            sure they are informed,
+                            involved and leading
+                            the implementation
+                            of the plan.
+                        </div>
                     </div>
                     <div class="large-2 columns no-padding-left-right">
                         <a class="showSingle" target="4">
                             <img src="images/agile-functionality/l.png" alt="Letter L">
                         </a>
-                        <div id="div4" class="targetDiv" style="display: none; color: white;">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</div>
+                        <div id="div4" class="targetDiv" style="display: none; color: white;">Once the plan is
+                            implemented, we’ll help
+                            you measure results.
+                            We’ll use this learning to
+                            evolve your plan so it is
+                            always tailored and
+                            effective in your business.</div>
                     </div>
                     <div class="large-2 columns no-padding-left-right end">
                         <a class="showSingle" target="5">
                         <!-- Test -->
                             <img src="images/agile-functionality/e.png" alt="Letter E">
                         </a>
-                        <div id="div5" class="targetDiv" style="display: none; color: white;">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</div>
+                        <div id="div5" class="targetDiv" style="display: none; color: white;">Our expertise will make
+                            sure that every solution
+                            engages your people and
+                            energises your culture.
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="client-boxes top_margin_c">
+            <div class="row">
+                <div class="large-4 columns">
+                    <img src="images/case-studies/thumbnails/george.jpg" alt="George Client Image">
+                </div>
+                <div class="large-4 columns">
+                    <img src="images/case-studies/thumbnails/noble.jpg" alt="Noble Foods Client Image">
+                </div>
+                <div class="large-4 columns">
+                    <img src="images/case-studies/thumbnails/nbrown.jpg" alt="NBrown Client Image">
                 </div>
             </div>
         </div>
@@ -128,6 +165,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <!-- Import Swiper.js JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script>
+    <!-- Import MatchHeight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+
+    <!-- Swiper Initialise -->
     <script>        
         var mySwiper = new Swiper ('.swiper-container', {
             // Optional parameters
@@ -140,6 +181,7 @@
             prevButton: '.swiper-button-prev',
         })
     </script>
+    <!-- Agile letter Select Function -->
     <script>
         jQuery(function () {
             jQuery('.showSection').click(function () {
@@ -152,6 +194,12 @@
                 jQuery('#div' + $(this).attr('target')).show();
                 $('.heading').html($(".title" + $(this).attr('target').toString()).html());
             });
+        });
+    </script>
+    <!-- JQuery Document Ready -->
+    <script>
+        $( document ).ready(function() {
+            $('.targetDiv').matchHeight();
         });
     </script>
 </body>

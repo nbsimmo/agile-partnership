@@ -9,6 +9,26 @@ h2{
 	font-size: 1.25rem !important;
 }
 
+.active-pink{
+	border-bottom: 2px solid #ec008c;
+}
+
+.active-orange{
+	border-bottom: 2px solid #f2b523;
+}
+
+.active-red{
+	border-bottom: 2px solid #ed1c24;
+}
+
+.active-blue{
+	border-bottom: 2px solid #00aeef;
+}
+
+.active-green{
+	border-bottom: 2px solid #7fc241;
+}
+
 /* ----- Body Content CSS Rules ----- */
 
 /* Header Styling Rules */
@@ -59,6 +79,10 @@ main{
 	width: 450px;
 	margin: 0 auto;
 	font-family: Georgia;
+}
+
+.targetDiv{
+	margin-top: 2rem;
 }
 
 /* Footer Styling Rules */
