@@ -1,0 +1,69 @@
+/* ----- Generic Styling ----- */
+html,
+body{
+	background: #3e484e;
+	color: white;
+}
+
+h2{
+	font-size: 1.25rem !important;
+}
+
+/* ----- Body Content CSS Rules ----- */
+
+/* Header Styling Rules */
+header{
+	color: white;
+	font-family: Georgia;
+}
+
+.top-content{
+	float: left;
+
+}
+
+.top-phone-number{
+	
+}
+
+.top-email{
+
+}
+
+i.fa{
+	font-size: 25px;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+}
+
+/* Main Styling Rules */
+main{
+
+}
+
+.swiper-container {
+    height: auto;
+    text-align: center;
+    color: white;
+    background: #30383d;
+    padding: 30px;
+    -moz-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+    -webkit-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+    box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+}
+
+.slider-content{
+	width: 450px;
+	margin: 0 auto;
+	font-family: Georgia;
+}
+
+/* Footer Styling Rules */
+footer{
+
+}
+
+/* ----- Misc. CSS Rules ----- */

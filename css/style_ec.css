@@ -7,6 +7,9 @@
 	float:left;
 	display: block;
 }
+.text-center{
+	text-align: center;
+}
 /* ------------------------ FONTS ----------------------- */
 .font_size_a {
 	font-size:0.75rem !important;
@@ -191,6 +194,10 @@
 .tb_padding_d {
 	padding-top:4rem !important;
 	padding-bottom:4rem !important;
+}
+.no-padding-left-right{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 /* ------------------------ BORDERS ----------------------- */
 .colour_top_border_a {
