@@ -15,23 +15,23 @@ h2{
 }
 
 .active-pink{
-	border-bottom: 2px solid #ec008c;
+	border-bottom: 4px solid #ec008c;
 }
 
 .active-orange{
-	border-bottom: 2px solid #f2b523;
+	border-bottom: 4px solid #f2b523;
 }
 
 .active-red{
-	border-bottom: 2px solid #ed1c24;
+	border-bottom: 4px solid #ed1c24;
 }
 
 .active-blue{
-	border-bottom: 2px solid #00aeef;
+	border-bottom: 4px solid #00aeef;
 }
 
 .active-green{
-	border-bottom: 2px solid #7fc241;
+	border-bottom: 4px solid #7fc241;
 }
 
 /* ----- Body Content CSS Rules ----- */
@@ -66,6 +66,10 @@ nav a{
 	border-right: 1px solid white;
 	height: auto;
 	text-align: center;
+}
+
+a:hover, a:focus {
+    color: #fff;
 }
 
 /* Main Styling Rules */
