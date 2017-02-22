@@ -34,6 +34,9 @@
 /* ------------------------ LINKS ----------------------- */
 
 /* ------------------------ MARGINS ----------------------- */
+.top_margin_half_a{
+	margin-top: 0.5rem !important;
+}
 .top_margin_a {
 	margin-top:1rem !important;
 }

@@ -43,8 +43,14 @@ header{
 }
 
 .top-content{
-	float: left;
+	color: white;
+}
 
+.top-newsletter-button{
+	padding: 5px;
+    border: 2px solid white;
+    background: #00aeef;
+    color: white;
 }
 
 .top-phone-number{
@@ -109,7 +115,11 @@ main{
 }
 
 .client-title{
-	
+	margin-bottom: 0;
+}
+
+.client-info{
+	clear: both;
 }
 
 /* Footer Styling Rules */
@@ -119,3 +129,11 @@ footer{
 }
 
 /* ----- Misc. CSS Rules ----- */
+
+/* ----- Media Queries ----- */
+
+@media screen and (max-width: 639px) {
+	.clients-box{
+		margin-top: 2rem;
+	}
+}

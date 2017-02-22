@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css">
     <!-- Import Swiper.js CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-
+    <!-- Import Hover Effects -->
+    <link rel="stylesheet" href="css/set1.css">
 </head>
 <body>
     <!-- Header -->
     <header class="top_padding_a">
-        <div class="row">
+        <div class="row hide-for-medium-only hide-for-small-only">
             <div class="social-icons float-right">
                 <i class="fa fa-facebook-square" aria-hidden="true"></i>
                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
@@ -28,17 +29,30 @@
             </div>
         </div>
         <div class="row">
-            <div class="large-3 columns logo">
-                <img class="logo-img" src="images/logo.png" alt="Agility Partnership Logo">
+            <div class="small-6 medium-3 large-3 columns logo">
+                <a href="/"><img class="logo-img" src="images/logo.png" alt="Agility Partnership Logo"></a>
             </div>
-            <div class="large-9 columns">
+            <div class="large-9 columns hide-for-medium-only hide-for-small-only">
                 <div class="row float-right">
-                    <p class="top-phone-number right_margin_a top-content">Call: (+44) 755 779 0659</p>
-                    <p class="top-email right_margin_a top-content">E-mail: caroline@agileconsultingltd.com</p>
-                    <p class="top-newsletter-button top-content">Sign up for Newsletter</p>
+                    <a class="hvr-grow" href="07557790659">
+                        <p class="top-phone-number right_margin_a top-content" style="    margin-top: 0.4rem !important;">Call: (+44) 755 779 0659</p>
+                    </a>
+                    <a class="hvr-grow" href="mailto:caroline@agileconsultingltd.com">
+                        <p class="top-email right_margin_a top-content" style="    margin-top: 0.4rem !important;">E-mail: caroline@agileconsultingltd.com</p>
+                    </a>
+                    <!--<p class="top-newsletter-button top-content">Sign up for Newsletter</p>-->
+                    <a class="top-newsletter-button top-content hvr-buzz-out" data-open="exampleModal1">Sign up for Newsletter</a>
+                </div>
+                <div class="reveal" id="exampleModal1" data-reveal>
+                    <h1>Awesome. I Have It.</h1>
+                    <p class="lead">Your couch. It is mine.</p>
+                    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="row float-right">
-                    <nav>
+                    <nav class="top_margin_half_a ">
                         <a class="nav-item active-pink" href="/">Home</a>
                         <a class="nav-item hvr-underline-from-left-yellow" href="services.html">Services</a>
                         <a class="nav-item hvr-underline-from-left-red" href="about.html">About Us</a>
@@ -46,6 +60,9 @@
                         <a class="nav-item hvr-underline-from-left-green" href="work.html">Our Work</a>
                     </nav>
                 </div>
+            </div>
+            <div class="small-6 medium-9 columns" data-responsive-toggle="example-menu" data-hide-for="large">
+                <button class="menu-icon float-right" type="button" data-toggle="example-menu"></button>
             </div>
         </div>
     </header>
@@ -140,26 +157,41 @@
         </div>
         <div class="client-boxes top_margin_c">
             <div class="row">
-                <div class="large-4 columns">
+                <div class="large-4 medium-4 columns clients-box">
                     <div class="client-box">
                         <p class="client-title"><b>George</b></p>
-                        <img class="client-img" src="images/case-studies/thumbnails/george.jpg" alt="George Client Image">
+                        <div class="grid">
+							<figure class="effect-lily">
+								<img class="client-img" src="images/case-studies/thumbnails/george.jpg" alt="George Client Image">		
+							</figure>							
+						</div>
+                        
                         <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
                         <p>Read More</p>
                     </div>
                 </div>
-                <div class="large-4 columns">
+                <div class="large-4 medium-4 columns clients-box">
                     <div class="client-box">
                         <p class="client-title"><b>Noble Foods</b></p>
-                        <img class="client-img" src="images/case-studies/thumbnails/noble.jpg" alt="Noble Foods Client Image">
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img class="client-img" src="images/case-studies/thumbnails/noble.jpg" alt="Noble Foods Client Image">   
+                            </figure>                           
+                        </div>
+                        
                         <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
                         <p>Read More</p>
                     </div>
                 </div>
-                <div class="large-4 columns">
+                <div class="large-4 medium-4 columns clients-box">
                     <div class="client-box">
                         <p class="client-title"><b>NBrown</b></p>
-                        <img class="client-img" src="images/case-studies/thumbnails/nbrown.jpg" alt="NBrown Client Image">
+                        <div class="grid">
+                            <figure class="effect-lily">
+                                <img class="client-img" src="images/case-studies/thumbnails/nbrown.jpg" alt="NBrown Client Image">
+                            </figure>                           
+                        </div>
+                        
                         <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
                         <p>Read More</p>
                     </div>
