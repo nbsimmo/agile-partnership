@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
     <!-- Import Hover Effects -->
     <link rel="stylesheet" href="css/set1.css">
+    <!-- Set Viewport for Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <!-- Header -->
@@ -61,154 +63,187 @@
                     </nav>
                 </div>
             </div>
-            <div class="small-6 medium-9 columns" data-responsive-toggle="example-menu" data-hide-for="large">
-                <button class="menu-icon float-right" type="button" data-toggle="example-menu"></button>
-            </div>
-        </div>
-    </header>
-    <!-- Main Content -->
-    <main>
-        <div class="intro-slider top_margin_b">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <h2 class="swiper-title">An evolving world</h2>
-                        <img src="images/colour-line.jpg" alt="Colour Line">
-                        <p class="slider-content" style="">Consumer habits, regulatory change, technological impact, global competition, social mobility. All these – plus changes not yet thought of – mean that today’s businesses must be agile enough to meet the challenges of tomorrow. Businesses who see change as the everyday, not the extraordinary. And vitally, businesses full of people who can perform today and are prepared for tomorrow.</p>
-                    </div>
-                    <div class="swiper-slide ">
-                        <h2 class="swiper-title">An agile approach</h2>
-                        <img src="images/colour-line.jpg" alt="Colour Line">
-                        <p class="slider-content" style="">Helping businesses today prepare their people for tomorrow means respecting their past. At Agile, we take time to understand where you have been and where you are now before delivering the in-the-moment, appropriate solutions that will help you achieve your long term goals. We specialise in people-led change, resetting and rebalancing your skills base for the business you want to be. Defining values that will resonate in a multi-channel world. Leveraging digital technology to enable people. Respectfully moving your business from fixed to flexible – and fit for the future.</p>
-                    </div>
-                </div>
-                <!-- If we need pagination 
-                <div class="swiper-pagination"></div>-->
-                
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-        <div class="agile-workings text-center top_margin_b">
-            <div class="row">
-                <h2 class="swiper-title">How Agile works</h2>
-                <div class="agile-functionality">
-                    <div class="large-2 large-offset-1 columns no-padding-left-right">
-                        <a class="showSingle" target="1">
-                            <img src="images/agile-functionality/a.png" alt="Letter A">
-                        </a>
-                        <div id="div1" class="targetDiv">
-                        We get close to your business, understanding your people, your culture and your goals before using our expertise to deliver solutions that are absolutely right for you.
-                        </div>
-                    </div>
-                    <div class="large-2 columns no-padding-left-right">
-                        <a class="showSingle" target="2">
-                            <img src="images/agile-functionality/g.png" alt="Letter G">
-                        </a>
-                        <div id="div2" class="targetDiv" style="display: none; color: white;">Once we completely
-                            understand your business
-                            and where you want to go,
-                            we’ll work with you to set
-                            out your goals and create
-                            a detailed plan.
-                        </div>
-                    </div>
-                    <div class="large-2 columns no-padding-left-right">
-                        <a class="showSingle" target="3">
-                            <img src="images/agile-functionality/i.png" alt="Letter I">
-                        </a>
-                        <div id="div3" class="targetDiv" style="display: none; color: white;">We’ll work closely with
-                            your team. We’ll make
-                            sure they are informed,
-                            involved and leading
-                            the implementation
-                            of the plan.
-                        </div>
-                    </div>
-                    <div class="large-2 columns no-padding-left-right">
-                        <a class="showSingle" target="4">
-                            <img src="images/agile-functionality/l.png" alt="Letter L">
-                        </a>
-                        <div id="div4" class="targetDiv" style="display: none; color: white;">Once the plan is
-                            implemented, we’ll help
-                            you measure results.
-                            We’ll use this learning to
-                            evolve your plan so it is
-                            always tailored and
-                            effective in your business.</div>
-                    </div>
-                    <div class="large-2 columns no-padding-left-right end">
-                        <a class="showSingle" target="5">
-                        <!-- Test -->
-                            <img src="images/agile-functionality/e.png" alt="Letter E">
-                        </a>
-                        <div id="div5" class="targetDiv" style="display: none; color: white;">Our expertise will make
-                            sure that every solution
-                            engages your people and
-                            energises your culture.
-                        </div>
-                    </div>
+            <!-- Burger Menu Icon -->
+            <div class="small-6 medium-9 columns top_padding_b right_padding_b" data-responsive-toggle="example-menu" data-hide-for="large">
+                <div class="navbar-toggle float-right" title="Menu">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
             </div>
-        </div>
-        <div class="client-boxes top_margin_c">
-            <div class="row">
-                <div class="large-4 medium-4 columns clients-box">
-                    <div class="client-box">
-                        <p class="client-title"><b>George</b></p>
-                        <div class="grid">
-							<figure class="effect-lily">
-								<img class="client-img" src="images/case-studies/thumbnails/george.jpg" alt="George Client Image">		
-							</figure>							
-						</div>
-                        
-                        <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
-                        <p>Read More</p>
+            <!-- Mobile Nav -->
+            <div class="white nav-hide nav hide-for-large">
+                <div class="row top_margin_nav nav_text">
+                    <div class="medium-12 columns mobile-nav-colour-bar">
+                        <img class="mobile-nav-colour-bar-img" src="images/colour-line.jpg" alt="Colour Line">
+                    </div>
+                    <div class="medium-6 columns white_links links">
+                        <ul class="links-ul">
+                            <li><a class="" href="/">Home</a></li>
+                            <li><a class="" href="services.html">Services</a></li>
+                            <li><a class="" href="about.html">About Us</a></li>
+                            <li><a class="" href="details.html">Our Details</a></li>
+                            <li><a class="" href="work.html">Our Work</a></li>
+                            <li><a class="top-newsletter-button top-content hvr-buzz-out" data-open="exampleModal1">Sign up for Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="medium-6 columns white_links links links-two">
+                                            <a class="hvr-grow" href="07557790659">
+                        <p class="top-phone-number right_margin_a top-content" style="    margin-top: 0.4rem !important;">Call: (+44) 755 779 0659</p>
+                    </a>
+                    <a class="hvr-grow" href="mailto:caroline@agileconsultingltd.com">
+                        <p class="top-email right_margin_a top-content" style="    margin-top: 0.4rem !important;">E-mail: caroline@agileconsultingltd.com</p>
+                    </a>
                     </div>
                 </div>
-                <div class="large-4 medium-4 columns clients-box">
-                    <div class="client-box">
-                        <p class="client-title"><b>Noble Foods</b></p>
-                        <div class="grid">
-                            <figure class="effect-lily">
-                                <img class="client-img" src="images/case-studies/thumbnails/noble.jpg" alt="Noble Foods Client Image">   
-                            </figure>                           
-                        </div>
-                        
-                        <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
-                        <p>Read More</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 columns clients-box">
-                    <div class="client-box">
-                        <p class="client-title"><b>NBrown</b></p>
-                        <div class="grid">
-                            <figure class="effect-lily">
-                                <img class="client-img" src="images/case-studies/thumbnails/nbrown.jpg" alt="NBrown Client Image">
-                            </figure>                           
-                        </div>
-                        
-                        <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
-                        <p>Read More</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="testimonials tb_margin_d text-center">
-            <div class="row">
-
-                    <h2 class="swiper-title">What our clients say</h2>
-                    <br>
-                    <p class="slider-content" style="">Helping businesses today prepare their people for tomorrow means respecting their past. At Agile, we take time to understand where you have been and where you are now before delivering the in-the-moment, appropriate solutions that will help you achieve your long term goals. We specialise in people-led change, resetting and rebalancing your skills base for the business you want to be. Defining values that will resonate in a multi-channel world. Leveraging digital technology to enable people. Respectfully moving your business from fixed to flexible – and fit for the future.</p>
-                    <br>
-                    <p><b>Andy Clarke</b><br>
-                    <i>CEO, ASDA</i></p>
+            </div>   
+        </div>    
+    </div>
+</div>
+</header>
+<!-- Main Content -->
+<main>
+    <div class="intro-slider top_margin_b">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h2 class="swiper-title">An evolving world</h2>
                     <img src="images/colour-line.jpg" alt="Colour Line">
+                    <p class="slider-content" style="">Consumer habits, regulatory change, technological impact, global competition, social mobility. All these – plus changes not yet thought of – mean that today’s businesses must be agile enough to meet the challenges of tomorrow. Businesses who see change as the everyday, not the extraordinary. And vitally, businesses full of people who can perform today and are prepared for tomorrow.</p>
+                </div>
+                <div class="swiper-slide ">
+                    <h2 class="swiper-title">An agile approach</h2>
+                    <img src="images/colour-line.jpg" alt="Colour Line">
+                    <p class="slider-content" style="">Helping businesses today prepare their people for tomorrow means respecting their past. At Agile, we take time to understand where you have been and where you are now before delivering the in-the-moment, appropriate solutions that will help you achieve your long term goals. We specialise in people-led change, resetting and rebalancing your skills base for the business you want to be. Defining values that will resonate in a multi-channel world. Leveraging digital technology to enable people. Respectfully moving your business from fixed to flexible – and fit for the future.</p>
+                </div>
+            </div>
+<!-- If we need pagination 
+    <div class="swiper-pagination"></div>-->
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+</div>
+<div class="agile-workings text-center top_margin_b">
+    <div class="row">
+        <h2 class="swiper-title">How Agile works</h2>
+        <div class="agile-functionality">
+            <div class="large-2 large-offset-1 columns no-padding-left-right">
+                <a class="showSingle" target="1">
+                    <img src="images/agile-functionality/a.png" alt="Letter A">
+                </a>
+                <div id="div1" class="targetDiv">
+                    We get close to your business, understanding your people, your culture and your goals before using our expertise to deliver solutions that are absolutely right for you.
+                </div>
+            </div>
+            <div class="large-2 columns no-padding-left-right">
+                <a class="showSingle" target="2">
+                    <img src="images/agile-functionality/g.png" alt="Letter G">
+                </a>
+                <div id="div2" class="targetDiv" style="display: none; color: white;">Once we completely
+                    understand your business
+                    and where you want to go,
+                    we’ll work with you to set
+                    out your goals and create
+                    a detailed plan.
+                </div>
+            </div>
+            <div class="large-2 columns no-padding-left-right">
+                <a class="showSingle" target="3">
+                    <img src="images/agile-functionality/i.png" alt="Letter I">
+                </a>
+                <div id="div3" class="targetDiv" style="display: none; color: white;">We’ll work closely with
+                    your team. We’ll make
+                    sure they are informed,
+                    involved and leading
+                    the implementation
+                    of the plan.
+                </div>
+            </div>
+            <div class="large-2 columns no-padding-left-right">
+                <a class="showSingle" target="4">
+                    <img src="images/agile-functionality/l.png" alt="Letter L">
+                </a>
+                <div id="div4" class="targetDiv" style="display: none; color: white;">Once the plan is
+                    implemented, we’ll help
+                    you measure results.
+                    We’ll use this learning to
+                    evolve your plan so it is
+                    always tailored and
+                    effective in your business.</div>
+                </div>
+                <div class="large-2 columns no-padding-left-right end">
+                    <a class="showSingle" target="5">
+                        <!-- Test -->
+                        <img src="images/agile-functionality/e.png" alt="Letter E">
+                    </a>
+                    <div id="div5" class="targetDiv" style="display: none; color: white;">Our expertise will make
+                        sure that every solution
+                        engages your people and
+                        energises your culture.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="client-boxes top_margin_c">
+        <div class="row">
+            <div class="large-4 medium-4 columns clients-box">
+                <div class="client-box">
+                    <p class="client-title"><b>George</b></p>
+                    <div class="grid">
+                        <figure class="effect-lily">
+                            <img class="client-img" src="images/case-studies/thumbnails/george.jpg" alt="George Client Image">		
+                        </figure>							
+                    </div>
+
+                    <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
+                    <p>Read More</p>
+                </div>
+            </div>
+            <div class="large-4 medium-4 columns clients-box">
+                <div class="client-box">
+                    <p class="client-title"><b>Noble Foods</b></p>
+                    <div class="grid">
+                        <figure class="effect-lily">
+                            <img class="client-img" src="images/case-studies/thumbnails/noble.jpg" alt="Noble Foods Client Image">   
+                        </figure>                           
+                    </div>
+
+                    <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
+                    <p>Read More</p>
+                </div>
+            </div>
+            <div class="large-4 medium-4 columns clients-box">
+                <div class="client-box">
+                    <p class="client-title"><b>NBrown</b></p>
+                    <div class="grid">
+                        <figure class="effect-lily">
+                            <img class="client-img" src="images/case-studies/thumbnails/nbrown.jpg" alt="NBrown Client Image">
+                        </figure>                           
+                    </div>
+
+                    <p class="client-info top_margin_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit et illum iusto voluptatum dolores vero rerum sed, ipsum laudantium labore quaerat earum eius esse possimus velit nemo obcaecati facilis sequi.</p>
+                    <p>Read More</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="testimonials tb_margin_d text-center">
+        <div class="row">
+
+            <h2 class="swiper-title">What our clients say</h2>
+            <br>
+            <p class="testimonial-content lr_padding_b" style="">Helping businesses today prepare their people for tomorrow means respecting their past. At Agile, we take time to understand where you have been and where you are now before delivering the in-the-moment, appropriate solutions that will help you achieve your long term goals. We specialise in people-led change, resetting and rebalancing your skills base for the business you want to be. Defining values that will resonate in a multi-channel world. Leveraging digital technology to enable people. Respectfully moving your business from fixed to flexible – and fit for the future.</p>
+            <br>
+            <p><b>Andy Clarke</b><br>
+                <i>CEO, ASDA</i></p>
+                <img src="images/colour-line.jpg" alt="Colour Line">
             </div>
         </div>
     </main>
@@ -218,7 +253,7 @@
             <p>Company number: 10563213</p>
         </div>
     </footer>
-    
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
@@ -235,36 +270,55 @@
     <!-- Swiper Initialise -->
     <script>        
         var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            paginationClickable: true,
-            // If we need pagination
-            pagination: '.swiper-pagination',
-            // Navigation arrows
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-        })
-    </script>
-    <!-- Agile letter Select Function -->
-    <script>
-        jQuery(function () {
-            jQuery('.showSection').click(function () {
-                jQuery('.testTarget').hide();
-                jQuery('#test' + $(this).attr('targeta')).show();
-            });
-            jQuery('.showSingle').click(function () {
-                jQuery($(this).attr('target')).css("text-decoration", "underline");
-                jQuery('.targetDiv').hide();
-                jQuery('#div' + $(this).attr('target')).show();
-                $('.heading').html($(".title" + $(this).attr('target').toString()).html());
-            });
+// Optional parameters
+direction: 'horizontal',
+paginationClickable: true,
+// If we need pagination
+pagination: '.swiper-pagination',
+// Navigation arrows
+nextButton: '.swiper-button-next',
+prevButton: '.swiper-button-prev',
+})
+</script>
+<!-- Agile letter Select Function -->
+<script>
+    jQuery(function () {
+        jQuery('.showSection').click(function () {
+            jQuery('.testTarget').hide();
+            jQuery('#test' + $(this).attr('targeta')).show();
         });
-    </script>
-    <!-- JQuery Document Ready -->
-    <script>
-        $( document ).ready(function() {
-            $('.targetDiv').matchHeight();
+        jQuery('.showSingle').click(function () {
+            jQuery($(this).attr('target')).css("text-decoration", "underline");
+            jQuery('.targetDiv').hide();
+            jQuery('#div' + $(this).attr('target')).show();
+            $('.heading').html($(".title" + $(this).attr('target').toString()).html());
         });
-    </script>
+    });
+</script>
+<!-- Nav Bar -->
+<script>
+    $(function(){
+        $('.navbar-toggle').click(function(){
+            //$('.navbar-toggle').toggleClass('navbar-on');
+            if ($(this).hasClass("navbar-on")) {
+                $(this).removeClass("navbar-on");
+                //$('nav').fadeToggle();
+                $('.nav').addClass('nav-hide');
+                $('html').removeClass('scrollbar');
+            }
+            else {
+                $(this).addClass("navbar-on");
+                $('.nav').removeClass('nav-hide');
+                $('html').addClass('scrollbar');
+            }
+        });
+    });
+</script>
+<!-- JQuery Document Ready -->
+<script>
+    $( document ).ready(function() {
+        $('.targetDiv').matchHeight();
+    });
+</script>
 </body>
 </html>

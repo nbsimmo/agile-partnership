@@ -42,19 +42,24 @@ header{
 	font-family: Georgia;
 }
 
+.logo-img{
+	position: relative;
+    z-index: 99999999;
+}
+
 .top-content{
 	color: white;
 }
 
 .top-newsletter-button{
 	padding: 5px;
-    border: 2px solid white;
-    background: #00aeef;
-    color: white;
+	border: 2px solid white;
+	background: #00aeef;
+	color: white;
 }
 
 .top-phone-number{
-	
+
 }
 
 .top-email{
@@ -75,65 +80,210 @@ nav a{
 }
 
 a:hover, a:focus {
-    color: #fff;
+	color: #fff;
 }
 
-/* Main Styling Rules */
-main{
-
+.nav,
+.navbar-toggle {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
-.swiper-container {
-    height: auto;
-    text-align: center;
-    color: white;
-    background: #30383d;
-    padding: 30px;
-    -moz-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
-    -webkit-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
-    box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
-}
-
-.slider-content{
-	width: 450px;
-	margin: 0 auto;
-	font-family: Georgia;
-}
-
-.targetDiv{
-	margin-top: 2rem;
-}
-
-.client-box{
-	background: #efb422;
-	padding: 10px;
-	color: black;
-}
-
-.client-img{
+.nav {
+	position: fixed;
+	z-index: 999999;
+	background-color: #ba1854;
 	width: 100%;
+	height: 100%;
+	top: 0px;
+}
+.nav_inner {
+	height: 100%;
+	overflow: auto;
 }
 
-.client-title{
-	margin-bottom: 0;
+.nav-hide { display: none; }
+
+.nav ul {
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.client-info{
-	clear: both;
+.nav ul li { list-style: none; }
+
+.nav ul li a {
+	font-size: 30px;
+	color: inherit;
+	font-weight: bolder;
+	text-decoration: none;
 }
 
-/* Footer Styling Rules */
-footer{
-	background: #30383d;
-	font-family: Georgia;
+.navbar-toggle {
+	width: 40px;
+	height: 40px;
+	z-index: 200000000000;
+	cursor: pointer;
+	position: relative;
 }
 
-/* ----- Misc. CSS Rules ----- */
+.bar1,
+.bar2,
+.bar3 {
+	width: 100%;
+	height: 6px;
+	margin-bottom: 4px;
+	transition: all 0.3s ease-in-out;
+}
 
-/* ----- Media Queries ----- */
+.navbar-on { 
+	background-color: #ba1854; 
+}
 
-@media screen and (max-width: 639px) {
-	.clients-box{
+.bar1{
+	background: #7fc241;
+}
+
+.bar2{
+	background: #efb422;
+}
+
+.bar3{
+	background: #00aeef;
+}
+
+.navbar-on .bar1 {
+	transform-origin: 20% 40%;
+	transform: rotate(45deg);
+	background: #fff;
+}
+
+.navbar-on .bar3 {
+	transform-origin: 10% 40%;
+	transform: rotate(-45deg);
+	background: #fff;
+}
+
+.navbar-on .bar2 { 
+	background-color: transparent;
+}
+
+.mobile-nav-colour-bar{
+	position: relative;
+    top: 120px;
+}
+
+.mobile-nav-colour-bar-img{
+	    margin: 0 auto;
+    display: block;
+}
+
+.scrollbar{
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.links-ul{
+	padding-left: 15px;
+}
+
+.links{
+	margin-top: 10rem;
+}
+
+.reveal-overlay{
+	z-index: 9999999999 !important;
+}
+
+	/* Main Styling Rules */
+	main{
+
+	}
+
+	.swiper-container {
+		height: auto;
+		text-align: center;
+		color: white;
+		background: #30383d;
+		-moz-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+		-webkit-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+		box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+	}
+
+	.slider-content{
+		margin: 0 auto;
+		font-family: Georgia;
+
+
+	}
+
+	.swiper-slide{
+		padding-top:60px;
+		padding-bottom: 60px;
+	}
+
+	.targetDiv{
 		margin-top: 2rem;
 	}
-}
+
+	.client-box{
+		background: #efb422;
+		padding: 10px;
+		color: black;
+	}
+
+	.client-img{
+		width: 100%;
+	}
+
+	.client-title{
+		margin-bottom: 0;
+	}
+
+	.client-info{
+		clear: both;
+	}
+
+	/* Footer Styling Rules */
+	footer{
+		background: #30383d;
+		font-family: Georgia;
+	}
+
+	/* ----- Misc. CSS Rules ----- */
+
+	/* ----- Media Queries ----- */
+
+	@media screen and (max-width: 639px) {
+		.clients-box{
+			margin-top: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.slider-content{
+			width: 100%;
+		}
+		.swiper-slide{
+			padding: 40px;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		.slider-content{
+			width: 430px;
+		}
+	}
+
+	@media screen and (max-width: 1023px) {
+		.nav ul li a {
+			font-size: 20px;
+		}
+		.links-two{
+			margin-top: 1rem !important;
+			padding-left: 26px;
+		}
+	}
