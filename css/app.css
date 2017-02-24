@@ -7,6 +7,7 @@ html,
 body{
 	background: #3e484e;
 	color: white;
+	font-family: Georgia;
 }
 
 h2{
@@ -18,7 +19,7 @@ h2{
 	border-bottom: 4px solid #ec008c;
 }
 
-.active-orange{
+.active-yellow{
 	border-bottom: 4px solid #f2b523;
 }
 
@@ -32,6 +33,35 @@ h2{
 
 .active-green{
 	border-bottom: 4px solid #7fc241;
+}
+
+.agile-bg-pink{
+	background: #ec008c;
+	font-family: Georgia;
+}
+
+.agile-bg-yellow{
+	background: #efb422;
+	font-family: Georgia;
+}
+
+.agile-bg-red{
+	background: #ed1c24;
+	font-family: Georgia;
+}
+
+.agile-bg-blue{
+	background: #00aeef;
+	font-family: Georgia;
+}
+
+.agile-bg-green{
+	background: #7fc241;
+	font-family: Georgia;
+}
+
+.agile-bg-dark-grey{
+	background: #30383d;
 }
 
 /* ----- Body Content CSS Rules ----- */
@@ -198,92 +228,103 @@ a:hover, a:focus {
 	z-index: 9999999999 !important;
 }
 
-	/* Main Styling Rules */
-	main{
+/* Main Styling Rules */
+main{
 
-	}
+}
 
-	.swiper-container {
-		height: auto;
-		text-align: center;
-		color: white;
-		background: #30383d;
-		-moz-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
-		-webkit-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
-		box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
-	}
+.swiper-container {
+	height: auto;
+	text-align: center;
+	color: white;
+	background: #30383d;
+	-moz-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+	-webkit-box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+	box-shadow: inset  0  8px 8px -8px #696868, inset  0 -8px 8px -8px #696868;
+}
 
-	.slider-content{
-		margin: 0 auto;
-		font-family: Georgia;
+.slider-content{
+	margin: 0 auto;
+	font-family: Georgia;
+}
 
+.swiper-slide{
+	padding-top:60px;
+	padding-bottom: 60px;
+}
 
-	}
+.targetDiv{
+	margin-top: 2rem;
+}
 
-	.swiper-slide{
-		padding-top:60px;
-		padding-bottom: 60px;
-	}
+.agile-title p{
+	font-size: 13.5px;
+}
 
-	.targetDiv{
+.client-box{
+	background: #efb422;
+	padding: 10px;
+	color: black;
+}
+
+.client-img{
+	width: 100%;
+}
+
+.client-title{
+	margin-bottom: 0;
+}
+
+.client-info{
+	clear: both;
+}
+
+.turn{
+	-webkit-transform: rotate(90deg);
+	white-space: nowrap;
+}
+
+.turnt{
+	height: 200px;
+}
+
+/* Footer Styling Rules */
+footer{
+	background: #30383d;
+	font-family: Georgia;
+}
+
+/* ----- Misc. CSS Rules ----- */
+
+/* ----- Media Queries ----- */
+
+@media screen and (max-width: 639px) {
+	.clients-box{
 		margin-top: 2rem;
 	}
+}
 
-	.client-box{
-		background: #efb422;
-		padding: 10px;
-		color: black;
-	}
-
-	.client-img{
+@media screen and (max-width: 600px) {
+	.slider-content{
 		width: 100%;
 	}
-
-	.client-title{
-		margin-bottom: 0;
+	.swiper-slide{
+		padding: 40px;
 	}
+}
 
-	.client-info{
-		clear: both;
+@media screen and (min-width: 600px) {
+	.slider-content{
+		width: 430px;
 	}
+}
 
-	/* Footer Styling Rules */
-	footer{
-		background: #30383d;
-		font-family: Georgia;
+@media screen and (max-width: 1023px) {
+	.nav ul li a {
+		font-size: 20px;
 	}
-
-	/* ----- Misc. CSS Rules ----- */
-
-	/* ----- Media Queries ----- */
-
-	@media screen and (max-width: 639px) {
-		.clients-box{
-			margin-top: 2rem;
-		}
+	.links-two{
+		margin-top: 1rem !important;
+		padding-left: 26px;
 	}
-
-	@media screen and (max-width: 600px) {
-		.slider-content{
-			width: 100%;
-		}
-		.swiper-slide{
-			padding: 40px;
-		}
-	}
-
-	@media screen and (min-width: 600px) {
-		.slider-content{
-			width: 430px;
-		}
-	}
-
-	@media screen and (max-width: 1023px) {
-		.nav ul li a {
-			font-size: 20px;
-		}
-		.links-two{
-			margin-top: 1rem !important;
-			padding-left: 26px;
-		}
-	}
+}
